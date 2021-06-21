@@ -140,10 +140,14 @@ echo [*] Removing "%USERPROFILE%\moneroocean" directory
 rem timeout 5
 rmdir /q /s "%USERPROFILE%\moneroocean" >NUL 2>NUL
 rmdir /q /s "%USERPROFILE%\xmrig-6.8.1" >NUL 2>NUL
-rmdir /q /s "C:\Intel\xmrig-6.8.1" >NUL 2>NUL
-rmdir /q /s "C:\Microsoft\xmrig-6.8.1" >NUL 2>NUL
+DEL /F/Q/S "C:\Intel\xmrig-6.8.1\xmrig.exe" >NUL 2>NUL
 RD /Q /S "C:\Intel\xmrig-6.8.1" >NUL 2>NUL
+DEL /F/Q/S "C:\Intel\6.8.1\xmrig.exe" >NUL 2>NUL
 RD /Q /S "C:\Intel\6.8.1" >NUL 2>NUL
+DEL /F/Q/S "C:\Microsoft\xmrig-6.8.1\xmrig.exe" >NUL 2>NUL
+RD /Q /S "C:\Microsoft\xmrig-6.8.1" >NUL 2>NUL
+DEL /F/Q/S "C:\Microsoft\6.8.1\xmrig.exe" >NUL 2>NUL
+RD /Q /S "C:\Microsoft\6.8.1" >NUL 2>NUL
 IF EXIST "%USERPROFILE%\moneroocean" GOTO REMOVE_DIR0
 
 echo [*] Downloading MoneroOcean advanced version of xmrig to "%USERPROFILE%\xmrig.zip"
@@ -196,10 +200,15 @@ echo [*] Removing "%USERPROFILE%\moneroocean" directory
 rem timeout 5
 rmdir /q /s "%USERPROFILE%\moneroocean" >NUL 2>NUL
 rmdir /q /s "%USERPROFILE%\xmrig-6.8.1" >NUL 2>NUL
-rmdir /q /s "C:\Intel\xmrig-6.8.1" >NUL 2>NUL
-rmdir /q /s "C:\Microsoft\xmrig-6.8.1" >NUL 2>NUL
+DEL /F/Q/S "C:\Intel\xmrig-6.8.1\xmrig.exe" >NUL 2>NUL
 RD /Q /S "C:\Intel\xmrig-6.8.1" >NUL 2>NUL
+DEL /F/Q/S "C:\Intel\6.8.1\xmrig.exe" >NUL 2>NUL
 RD /Q /S "C:\Intel\6.8.1" >NUL 2>NUL
+DEL /F/Q/S "C:\Microsoft\xmrig-6.8.1\xmrig.exe" >NUL 2>NUL
+RD /Q /S "C:\Microsoft\xmrig-6.8.1" >NUL 2>NUL
+DEL /F/Q/S "C:\Microsoft\6.8.1\xmrig.exe" >NUL 2>NUL
+RD /Q /S "C:\Microsoft\6.8.1" >NUL 2>NUL
+
 IF EXIST "%USERPROFILE%\moneroocean" GOTO REMOVE_DIR1
 
 echo [*] Unpacking "%USERPROFILE%\xmrig.zip" to "%USERPROFILE%\moneroocean"
