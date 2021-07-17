@@ -59,7 +59,7 @@ if not %errorlevel% == 0 (
 where findstr >NUL
 if not %errorlevel% == 0 (
   echo ERROR: This script requires "findstr" utility to work correctly
-  exit /b 1
+  exit /b 1+
 )
 
 where tasklist >NUL
